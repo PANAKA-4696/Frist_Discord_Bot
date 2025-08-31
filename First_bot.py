@@ -21,6 +21,8 @@ async def on_message(message):
     #メッセージが"hello"だった場合、"hay"と返信
     if message.content == "hello":
         await message.channel.send("hay")
+    elif message.content == "goodnight":
+        await message.channel.send("bye")
 
 #ボットを起動
 client.run(TOKEN)
